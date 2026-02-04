@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Blog | ViajaFácil</title>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-content">
+			<a class="logo" href="index.html">ViajaFácil</a>
+			<nav class="nav">
+				<a href="index.html">Inicio</a>
+				<a href="destinos.html">Destinos</a>
+				<a href="paquetes.html">Paquetes</a>
+				<a href="blog.html">Blog</a>
+				<a class="btn" href="contacto.html">Contactar</a>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<section class="hero">
+			<h1>Blog de Viajes</h1>
+			<p>Consejos, experiencias y tips para viajeros como tú.</p>
+		</section>
+		<section style="margin-bottom: 24px;">
+			<label for="filtro-categoria"><strong>Filtrar por categoría:</strong></label>
+			<select id="filtro-categoria">
+				<option value="todas">Todas</option>
+				<option value="Consejos">Consejos</option>
+				<option value="Destinos">Destinos</option>
+				<option value="Presupuesto">Presupuesto</option>
+			</select>
+		</section>
+		<section class="cards" id="blog-lista">
+			<!-- Artículos generados por JS -->
+		</section>
+	</main>
+	<footer class="site-footer">
+		<div class="container footer-content">
+			<p>© <span id="year"></span> ViajaFácil. Todos los derechos reservados.</p>
+			<p class="muted">Redes: Instagram · Facebook · TikTok (pronto)</p>
+		</div>
+	</footer>
+	<div id="modal-overlay" class="modal-overlay" style="display:none;">
+		<div class="modal-box">
+			<button class="modal-cerrar" id="modal-cerrar">×</button>
+			<div id="modal-contenido"></div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
